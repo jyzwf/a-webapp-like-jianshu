@@ -1,0 +1,460 @@
+@mask_color:rgba(255,255,255,.8);
+@border-color:#D9D9D9;
+@bottom-border:#D9D9D9;
+@sheet-mask:rgba(0,0,0,.6);
+@bigImg-mask:rgba(0,0,0,.8);
+@qk-mask:rgba(0,0,0,.5);
+@pink-color:#fc4766;
+@white:#fff;
+@time-color:rgba(0, 0, 0, 0.54);
+@black-a:rgba(0,0,0,.87);
+@no-color:#333333;
+@topic:#e78170;
+@dashed:rgba(0, 0, 0, 0.2);
+@end-color:#e0e0e0;
+@quote-bg:#f5f5f5;
+@quote-border:#767676;
+// 图片圆角
+.qk-round{
+  border-radius: 50%;
+}
+
+.qk-round-4{
+	border-radius:0.04rem;
+}
+
+.qk-round-6{
+	border-radius:0.06rem;
+}
+
+.qk-round-8{
+	border-radius:0.08rem;
+}
+
+//图片距离右边元素距离
+.img-margin-right{
+  margin-right: 0.04rem;
+}
+
+.margin-right-4{
+	margin-right: 0.04rem;
+}
+
+.margin-right-8{
+	margin-right: 0.08rem;
+}
+
+.margin-right-12{
+	margin-right: 0.12rem;
+}
+
+.margin-right-17{
+	margin-right: 0.17rem;
+}
+
+.margin-right-24{
+	margin-right: 0.24rem;
+}
+
+// 图片阴影
+.card-shadow{
+	box-shadow: 0 0.02rem 0.05rem 0 rgba(0,0,0,0.16),0 0.02rem 0.1rem 0 rgba(0,0,0,0.12);
+}
+
+// 白色阴影遮罩
+.shadow-mask{
+	box-shadow:0 0 0 99.99rem @mask_color;
+}
+
+// 黑色色阴影遮罩
+.shadow-mask-black{
+	box-shadow:0 0 0 99.99rem @bigImg-mask;
+}
+
+// 水平垂直居中
+.v-h-center{
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+//定位方式水平垂直居中
+.pos-center{
+	position:absolute;
+	left:50%;
+	top:50%;
+	transform:translate3d(-50%,-50%,0);
+}
+
+// 伪类水平垂直居中
+.before-after-center{
+	&:before,&:after{
+		content:'';
+		position:absolute;
+		left:50%;
+		top:50%;
+		transform:translate3d(-50%,-50%,0);
+	}
+}
+
+// 元素两端对齐分布
+.ele-justify{
+	display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+// 去除按钮的一般css
+.init-btn{
+	border:none;
+	outline: none;
+	background:transparent;
+	webkit-appearance: none;
+	border-radius: 0.04rem;
+	cursor: pointer;
+}
+
+//上下边框
+.t-b-border{
+	border-top:0.01rem solid @border-color;
+	border-bottom:0.01rem solid @border-color;
+}
+
+// 底部边框
+.b-border{
+	border-bottom:0.01rem solid @bottom-border
+}
+
+// 顶部边框
+.t-border{
+	border-top:0.01rem solid @bottom-border
+}
+
+//表示时间的颜色
+time{
+	color:@time-color;
+	font-size:.1rem;
+}
+
+//sheet的mask
+.sheet-mask{
+	background:@sheet-mask;
+}
+
+.qk-mask{
+	&:before{
+		content:'';
+		position: absolute;
+		left:0;
+		top:0;
+		width:100%;
+		height:100%;
+		background:@qk-mask;
+	};
+}
+
+//固定几行
+.line-clamp{
+	display: -webkit-box;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    overflow:hidden;
+}
+
+//单行排，溢出隐藏
+.single-ellipsis{
+	overflow: hidden;
+	white-space:nowrap;
+	text-overflow: ellipsis;
+}
+
+//关于textarea的设置
+.init-textarea{
+	font-size:0.17rem;
+	line-height:inherit;
+	width:100%;
+	display: block;
+	height:1rem;
+}
+
+
+//设置没有关注，收藏，笔记的样式
+.no-aboutmy{
+	padding:0.1rem 0;
+	text-align:center;
+	font-size:0.15rem;
+	background:@white;
+	img{
+		width:1.66rem;
+		height:1rem;
+	}
+
+	.attention{
+		font-size: 0.14rem;
+		font-weight: 500;
+		letter-spacing: 0.01rem;
+		margin:0.16rem 0 0.12rem 0
+	}
+
+	a{
+		display:inline-block;
+		padding:0.04rem 0.12rem;
+		color:@white;
+		border-radius:0.04rem;
+		background:@no-color;
+		font-size: 0.14rem;
+
+		&.center-write{
+			margin-top: 0.14rem;
+		}
+	}
+}
+
+
+.qk-wave{
+	position:relative;
+	&:before{
+		content:'';
+		position:absolute;
+		left:0;
+		top:0;
+		width:.24rem;
+		height:0.24rem;
+		background:rgba(0,0,0,.48);
+		border-radius:50%;
+		transform:scale(0);
+		z-index:0
+	}
+
+	&:active,&:hover{
+		&:before{
+			animation:wave .7s ease;
+		}
+	}
+}
+
+@keyframes wave{
+	100%{
+		transform:scale(1.8);
+		opacity:0;
+	}
+}
+
+//一些图片的尺寸
+.img-10{
+	width:0.10rem;
+	min-width:0.10rem;
+	height:0.10rem;	
+}
+
+.img-14{
+	width:0.14rem;
+	min-width:0.14rem;
+	height:0.14rem;	
+}
+
+.img-15{
+	width:0.15rem;
+	min-width:0.15rem;
+	height:0.15rem;	
+}
+
+.img-18{
+	width:0.18rem;
+	min-width:0.18rem;
+	height:0.18rem;	
+}
+
+
+.img-20{
+	width:0.20rem;
+	min-width:0.20rem;
+	height:0.20rem;	
+}
+
+.img-24{
+	width:0.24rem;
+	min-width:0.24rem;
+	height:0.24rem;	
+}
+
+.img-25{
+	width:0.25rem;
+	min-width:0.25rem;
+	height:0.25rem;	
+}
+
+.img-32{
+	width:0.32rem;
+	min-width:0.32rem;
+	height:0.32rem;	
+}
+
+.img-35{
+	width:0.35rem;
+	min-width:0.35rem;
+	height:0.35rem;	
+}
+
+.img-4{
+	width:0.4rem;
+	min-width:0.4rem;
+	height:0.4rem;	
+}
+
+.img-48{
+	width:0.48rem;
+	min-width:0.48rem;
+	height:0.48rem;	
+}
+
+.img-50{
+	width:0.50rem;
+	min-width:0.50rem;
+	height:0.50rem;	
+}
+
+.img-64{
+	width:0.64rem;
+	min-width:0.64rem;
+	height:0.64rem;	
+}
+
+.img-73{
+	width:0.73rem;
+	min-width:0.73rem;
+	height:0.73rem;	
+}
+
+.img-80{
+	width:0.8rem;
+	min-width:0.8rem;
+	height:0.8rem;	
+}
+
+.img-88{
+	width:0.88rem;
+	min-width:0.88rem;
+	height:0.88rem;	
+}
+
+
+//补空白
+.blank-div{
+	width:100%;
+	height:.6rem;
+}
+
+
+//编辑器里面的样式
+#contentEdit,.writer-preview{
+	img{
+		width:100%;
+		margin:.1rem 0;
+	}
+
+	hr{
+		background:@border-color;
+		border:0;
+		height:0.01rem;
+		margin:0.16rem 0
+	}
+
+	span{
+		background:transparent !important;
+	}
+
+	*{
+		font-size:.15rem;
+	}
+
+	blockquote{
+		border-left:0.04rem solid @quote-border;
+		padding:0.12rem;
+		margin:0.16rem 0;
+		background:@quote-bg
+	}
+}
+
+
+//添加border
+.qk-border-b{
+	position:relative;
+	&:after{
+		content: " ";
+    	position: absolute;
+    	left: 0;
+    	bottom: 0;
+    	right: 0;
+    	height: 0.01rem;
+    	border-bottom: 0.01rem solid @bottom-border;
+    	color: @bottom-border;
+    	transform-origin: 0 100%;
+    	transform-origin: 0 100%;
+    	-webkit-transform: scaleY(0.5);
+    	transform: scaleY(0.5);
+	}
+}
+
+.qk-border-t{
+	position:relative;
+	&:before{
+		content: " ";
+    	position: absolute;
+    	left: 0;
+    	top: 0;
+    	right: 0;
+    	height: 0.01rem;
+    	border-bottom: 0.01rem solid @bottom-border;
+    	color: @bottom-border;
+    	transform-origin: 0 100%;
+    	transform-origin: 0 100%;
+    	-webkit-transform: scaleY(0.5);
+    	transform: scaleY(0.5);
+	}
+}
+
+.qk-border-t-b{
+	position:relative;
+	&:after,&:before{
+		content: " ";
+    	position: absolute;
+    	left: 0;
+    	bottom: 0;
+    	right: 0;
+    	height: 0.01rem;
+    	border-bottom: 0.01rem solid @bottom-border;
+    	color: @bottom-border;
+    	transform-origin: 0 100%;
+    	transform-origin: 0 100%;
+    	-webkit-transform: scaleY(0.5);
+    	transform: scaleY(0.5);
+	}
+
+	&:before{
+		top:0;
+	}
+}
+
+//话题颜色
+.qkTopic{
+	color:@topic;
+}
+
+//首页分割线
+.dashed-line{
+	margin:0 .16rem;
+	height:.01rem;
+	border-top: 0.02rem dashed @dashed;
+	transform: scaleY(.5);
+}
+
+
+//加载更多的样式
+.loader-end{
+	text-align: center;
+	font-size: .14rem;
+	padding: .12rem;
+	letter-spacing: 0.01rem;
+	color:@end-color;
+}

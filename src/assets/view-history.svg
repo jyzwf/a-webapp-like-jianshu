@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>F5091ABA-E4A6-4626-A5FE-B0DAE0729BE8</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <polygon id="path-1" points="0 0 24 0 24 24 0 24"></polygon>
+    </defs>
+    <g id="味噌的事" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="味噌圈子-个人中心" transform="translate(-16.000000, -343.000000)">
+            <g id="Help-Section" transform="translate(0.000000, 188.000000)">
+                <g id="help" transform="translate(16.000000, 143.000000)">
+                    <g id="ic_compare_arrows" transform="translate(0.000000, 12.000000)">
+                        <g id="Icon-24px">
+                            <mask id="mask-2" fill="white">
+                                <use xlink:href="#path-1"></use>
+                            </mask>
+                            <g id="ic_export_import" opacity="0.699999988"></g>
+                            <g id="ic_history" mask="url(#mask-2)">
+                                <g id="Icon-24px">
+                                    <polygon id="Shape" points="0 0 24 0 24 24 0 24"></polygon>
+                                    <path d="M12,22 C17.5228475,22 22,17.5228475 22,12 C22,6.4771525 17.5228475,2 12,2 C6.4771525,2 2,6.4771525 2,12 C2,17.5228475 6.4771525,22 12,22 Z M11.4761905,12.7415365 C11.4761905,12.8535994 11.5469404,12.9860817 11.6513393,13.0475217 L14.950925,14.989369 C15.2831,15.1848581 15.7114211,15.0782848 15.9113043,14.7451693 L15.8791719,14.7987196 C16.0773998,14.4683627 15.9765342,14.0464089 15.6267105,13.8402462 L12.9047619,12.2361111 L12.9047619,8.92138831 C12.9047619,8.53524954 12.5877156,8.22222222 12.2072159,8.22222222 L12.1737365,8.22222222 C11.7884925,8.22222222 11.4761905,8.53206041 11.4761905,8.91900237 L11.4761905,12.7415365 Z" id="Combined-Shape" fill-opacity="0.7" fill="#000000"></path>
+                                    <path d="M12,20 C7.581722,20 4,16.418278 4,12 L12,12 L12,4 C16.418278,4 20,7.581722 20,12 C20,16.418278 16.418278,20 12,20 Z M12,19 C15.8659932,19 19,15.8659932 19,12 C19,8.13400675 15.8659932,5 12,5 L12,12 L5,12 C5,15.8659932 8.13400675,19 12,19 Z" id="Combined-Shape" fill="#FFFFFF"></path>
+                                    <circle id="Oval-2" fill="#FFFFFF" cx="12" cy="4.5" r="0.5"></circle>
+                                    <circle id="Oval-2-Copy" fill="#FFFFFF" cx="4.5" cy="12" r="0.5"></circle>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
